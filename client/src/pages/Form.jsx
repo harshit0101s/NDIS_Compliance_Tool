@@ -48,7 +48,7 @@ export default function Form() {
       return;
     }
 
-    const apiUrl = import.meta.env.VITE_API_URL;
+    const apiUrl = "https://ndis-compliance-tool.onrender.com";
     try {
       const res = await axios.post(`${apiUrl}/generate_policy`, formData);
       setPolicy(res.data.policy);
